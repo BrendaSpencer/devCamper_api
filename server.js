@@ -27,7 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 // mount routers
 app.use('/api/v1/bootcamps', bootcamps);
 
-//app.use(errorHandler);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
